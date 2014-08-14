@@ -5,7 +5,7 @@
     
 	<services>
         <service id="zebba.twig_extension.filter.list"
-            class="Zebba\TwigExtensionBundle\Bridge\Twig\Filter\ListFilter">
+            class="Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Filter\ListFilter">
             <argument type="service" id="service_container" />
             
             <tag name="twig.extension" />
