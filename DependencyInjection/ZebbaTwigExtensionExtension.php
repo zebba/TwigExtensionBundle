@@ -1,6 +1,6 @@
 <?php
 
-namespace Zebba\TwigExtensionBundle\DependencyInjection;
+namespace Zebba\Bundle\TwigExtensionBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
