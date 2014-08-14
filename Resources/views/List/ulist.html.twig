@@ -1,0 +1,9 @@
+{% if list is iterable  %}
+	<ul>
+	{% for item in list %}
+		{%  include 'ZebbaTwigExtensionBundle:List:ulist.html.twig' with { 'list': item } only %}
+	{% endfor %}
+	</ul>	
+{% else %}
+	<li>{{ list }}</li>
+{% endif %}
