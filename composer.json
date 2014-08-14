@@ -1,8 +1,8 @@
 {
-	"name" : "zebba/form",
+	"name" : "zebba/twigextension-bundle",
 	"type" : "library",
-	"description" : "Zebba Form Component",
-	"homepage" : "https://github.com/zebba/Form",
+	"description" : "Zebba Twig Extension Bundle",
+	"homepage" : "https://github.com/zebba/TwigExtensionBundle",
 	"license" : "MIT",
 	"authors" : [{
 		"name" : "Sebastian Kuhlmann",
