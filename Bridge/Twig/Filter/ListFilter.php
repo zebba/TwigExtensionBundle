@@ -1,6 +1,6 @@
 <?php
 
-namespace Zebba\TwigExtensionBundle\Bridge\Twig\Filter;
+namespace Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Filter;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
