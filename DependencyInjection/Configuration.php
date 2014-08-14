@@ -1,6 +1,6 @@
 <?php
 
-namespace Zebba\TwigExtensionBundle\DependencyInjection;
+namespace Zebba\Bundle\TwigExtensionBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
