@@ -4,8 +4,8 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     
 	<services>
-        <service id="zebba.twig_extension.filter.list"
-            class="Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Filter\ListFilter">
+        <service id="zebba.twig_extension.function.list"
+            class="Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Functions\ListFunction">
             <argument type="service" id="service_container" />
             
             <tag name="twig.extension" />
