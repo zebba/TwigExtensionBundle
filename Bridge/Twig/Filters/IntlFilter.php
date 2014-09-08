@@ -28,7 +28,7 @@ class IntlFilter extends \Twig_Extension
 	public function getFilters()
 	{
 		return array(
-			new \Twig_SimpleFunction('country', array($this, 'countryFilter')),
+			new \Twig_SimpleFilter('country', array($this, 'countryFilter')),
 		);
 
 	}
@@ -36,7 +36,6 @@ class IntlFilter extends \Twig_Extension
 	/**
 	 *
 	 * @param string $code
-	 * @param Request $request
 	 * @return string
 	 */
 	public function countryFilter($code)
