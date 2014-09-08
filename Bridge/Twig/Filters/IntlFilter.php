@@ -5,6 +5,7 @@ namespace Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Filters;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Intl\Intl;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class IntlFilter extends \Twig_Extension
 {
@@ -36,10 +37,15 @@ class IntlFilter extends \Twig_Extension
 	 *
 	 * @param string $code
 	 * @param Request $request
-	 * @return Ambigous <unknown, string, NULL>
+	 * @return string
 	 */
-	public function countryFilter($code, Request $request)
+	public function countryFilter($code)
 	{
+		/* @var $stack RequestStack */
+		$stack = $this->container->get('request_stack');
+		/* @var $request Request */
+		$request = $stack->getCurrentRequest();
+
 		$country = Intl::getRegionBundle()->getCountryName($code, $request->getLocale());
 
 		return (! is_null($country)) ? $country : $code;
