@@ -45,7 +45,7 @@ class IntlFilter extends \Twig_Extension
 		/* @var $request Request */
 		$request = $stack->getCurrentRequest();
 
-		$country = Intl::getRegionBundle()->getCountryName($code, $request->getLocale());
+		$country = Intl::getRegionBundle()->getCountryName(strtoupper($code) , $request->getLocale());
 
 		return (! is_null($country)) ? $country : $code;
 	}
