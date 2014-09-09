@@ -11,6 +11,13 @@
             <tag name="twig.extension" />
         </service>
         
+        <service id="zebba.twig_extension.function.paginator"
+            class="Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Functions\PaginatorFunction">
+            <argument type="service" id="service_container" />
+            
+            <tag name="twig.extension" />
+        </service>
+        
         <service id="zebba.twig_extension.filter.intl"
             class="Zebba\Bundle\TwigExtensionBundle\Bridge\Twig\Filters\IntlFilter">
             <argument type="service" id="service_container" />
