@@ -39,7 +39,7 @@ class PaginatorFunction extends \Twig_Extension
 	 */
 	public function pagesFunction(Paginator $paginator, $limit)
 	{
-		return ($paginator->getCount() % limit) ? floor(paginator.count / limit) + 1 : floor(paginator.count / limit) + 1;
+		return ($paginator->count() % limit) ? floor(paginator.count / limit) + 1 : floor(paginator.count / limit) + 1;
 	}
 
 	/**
