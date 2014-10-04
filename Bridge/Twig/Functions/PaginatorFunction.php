@@ -35,11 +35,13 @@ class PaginatorFunction extends \Twig_Extension
 	 *
 	 * @param Paginator $paginator
 	 * @param integer $limit
-	 * @param array $attributes
+	 * @return integer
 	 */
 	public function pagesFunction(Paginator $paginator, $limit)
 	{
-		return ($paginator->count() % $limit) ? floor($paginator->count() / $limit) + 1 : floor($paginator->count() / $limit) + 1;
+		return (0 < $paginator->count() % $limit) ?
+			(int) floor($paginator->count() / $limit) + 1 :
+			(int) floor($paginator->count() / $limit);
 	}
 
 	/**

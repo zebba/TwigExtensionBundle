@@ -1,29 +1,23 @@
 {
-	"name" : "zebba/twigextension-bundle",
-	"type" : "library",
-	"description" : "Zebba Twig Extension Bundle",
-	"homepage" : "https://github.com/zebba/TwigExtensionBundle",
-	"license" : "MIT",
-	"authors" : [{
-		"name" : "Sebastian Kuhlmann",
-		"email" : "zebba@hotmail.de"
+	"name": "zebba/twigextension-bundle",
+	"type": "bundle",
+	"description": "Zebba Twig Extension Bundle",
+	"homepage": "https://github.com/zebba/TwigExtensionBundle",
+	"license": "MIT",
+	"authors": [{
+			"name": "Sebastian Kuhlmann",
+			"email": "zebba@hotmail.de"
 		}
 	],
-	"require" : {
-		"php" : ">=5.3.1",
+	"require": {
+		"php": ">=5.3.1",
 		"twig/twig": ">=1.12.0",
 		"symfony/dependency-injection": "~2.5"
 	},
-	"autoload" : {
-		"psr-0" : {
-			"Zebba\\Bundle\\TwigExtensionBundle\\" : ""
+	"autoload": {
+		"psr-0": {
+			"Zebba\\Bundle\\TwigExtensionBundle\\": ""
 		}
 	},
-	"target-dir" : "Zebba/Bundle/TwigExtensionBundle",
-	"minimum-stability" : "dev",
-	"extra" : {
-		"branch-alias" : {
-			"dev-master" : "master"
-		}
-	}
+	"target-dir": "Zebba/Bundle/TwigExtensionBundle",
 }
