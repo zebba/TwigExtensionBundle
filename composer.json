@@ -19,5 +19,5 @@
 			"Zebba\\Bundle\\TwigExtensionBundle\\": ""
 		}
 	},
-	"target-dir": "Zebba/Bundle/TwigExtensionBundle",
+	"target-dir": "Zebba/Bundle/TwigExtensionBundle"
 }
