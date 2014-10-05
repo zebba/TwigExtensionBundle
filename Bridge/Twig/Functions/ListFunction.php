@@ -33,10 +33,10 @@ class ListFunction extends \Twig_Extension
 
 	/**
 	 *
-	 * @param \IteratorAggregate $list
+	 * @param mixed $list
 	 * @param array $attributes
 	 */
-	public function ulistFunction(\IteratorAggregate $list, array $attributes = array())
+	public function ulistFunction($list, array $attributes = array())
 	{
 		return $this->container->get('templating')->render('ZebbaTwigExtensionBundle:List:ulist.html.twig', array(
 			'list' => $list
@@ -45,10 +45,10 @@ class ListFunction extends \Twig_Extension
 
 	/**
 	 *
-	 * @param \IteratorAggregate $list
+	 * @param mixed $list
 	 * @param array $attributes
 	 */
-	public function olistFunction(\IteratorAggregate $list, array $attributes = array())
+	public function olistFunction($list, array $attributes = array())
 	{
 		return $this->container->get('templating')->render('ZebbaTwigExtensionBundle:List:olist.html.twig', array(
 			'list' => $list
